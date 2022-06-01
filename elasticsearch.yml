@@ -1,0 +1,9 @@
+path.data: /var/lib/elasticsearch
+path.logs: /var/log/elasticsearch
+
+cluster.name: scanner
+node.name: node-1
+network.host: es
+discovery.type: single-node
+cluster.initial_master_nodes: node-1 // tried explicitly giving this but no luck
+xpack.security.enabled: true
